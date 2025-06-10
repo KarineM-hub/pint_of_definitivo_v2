@@ -1,0 +1,92 @@
+/* Fonte base */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cecbc7;
+    color: #000000;
+    line-height: 1.6;
+    display: flexbox;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #f8a63b;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header img {
+    height: 90px;
+    margin-bottom: 10px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  /* Seções */
+  section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #e0ddd8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Títulos */
+  h2 {
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  /* Parágrafos */
+  p {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Imagens genéricas */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+ /* Galeria de fotos com grid responsivo */
+.fotos {
+    display:flex ;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    justify-items: center;
+    margin: 20px auto;
+    max-width: 1000px;
+  }
+  
+  /* Imagens padrão da galeria */
+  .fotos img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Foto 5 em tamanho maior, mas com limite */
+  .fotos img[src*="foto 5.jpeg"] {
+    max-width: 500px;
+  }
+  
+  /* Foto 1 um pouco menor */
+  .fotos img[src*="foto 1.jpeg"] {
+    max-width: 150px;
+
+  }
+  
+  
