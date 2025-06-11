@@ -1,4 +1,4 @@
-/* Fonte base */
+/* Estilos base */
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -6,7 +6,6 @@ body {
     background-color: #cecbc7;
     color: #000000;
     line-height: 1.6;
-    display: flexbox;
   }
   
   /* Cabeçalho */
@@ -51,17 +50,31 @@ body {
     margin: 20px 0;
   }
   
-  /* Imagens genéricas */
+  /* Estilo geral das imagens */
   img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   }
-   
- /* Galeria de fotos com grid responsivo */
-.fotos {
-    display:flex ;
+  
+  /* Foto principal centralizada */
+  .foto-principal {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .foto-principal img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Galeria de fotos com grid responsivo */
+  .fotos {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
     justify-items: center;
@@ -78,15 +91,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
-  /* Foto 5 em tamanho maior, mas com limite */
+  /* Imagem específica: Foto 5 com tamanho maior */
   .fotos img[src*="foto 5.jpeg"] {
     max-width: 500px;
   }
-  
-  /* Foto 1 um pouco menor */
-  .fotos img[src*="foto 1.jpeg"] {
-    max-width: 150px;
-
-  }
-  
-  
+    
